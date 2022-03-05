@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const apiClient = axios.create({
-  baseURL: 'https://my-json-server.typicode.com/HectorVurchio/myJSONDB',
+  baseURL: 'https://my-json-server.typicode.com/HectorVurchio/vuejs_course_one',
   withCredentials: false,
   headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
 })
