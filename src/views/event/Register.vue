@@ -9,6 +9,7 @@ export default {
   inject: ['GStore'],
   methods: {
     register() {
+      console.log(this.GStore)
       // Call to API
       // If registered then redirect to event details
       this.GStore.flashMessage =

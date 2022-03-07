@@ -5,6 +5,7 @@ import EventDetails from '../views/event/Details.vue'
 import EventRegister from '../views/event/Register.vue'
 import EventEdit from '../views/event/Edit.vue'
 import About from '../views/About.vue'
+import EventCreate from '@/views/EventCreate.vue'
 import NotFound from '@/views/NotFound.vue'
 import NetworkError from '@/views/NetworkError.vue'
 import NProgress from 'nprogress'
@@ -56,6 +57,11 @@ const routes = [
         component: EventEdit,
       },
     ],
+  },
+  {
+    path: '/event/create',
+    name: 'EventCreate',
+    component: EventCreate,
   },
   {
     path: '/event/:afterEvent(.*)',
