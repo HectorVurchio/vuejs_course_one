@@ -10,7 +10,7 @@ import NotFound from '@/views/NotFound.vue'
 import NetworkError from '@/views/NetworkError.vue'
 import NProgress from 'nprogress'
 import EventService from '@/services/EventService.js'
-import GStore from '@/store'
+import store from '@/store'
 
 const routes = [
   {
@@ -27,7 +27,7 @@ const routes = [
     beforeEnter: (to) => {
       return EventService.getEvent(to.params.id)
         .then((response) => {
-          GStore.event = response.data
+          store.commit('insert_event', response.data)
         })
         .catch((error) => {
           if (error.response && error.response.status == 404) {

@@ -41,7 +41,7 @@
 
       <button type="submit">Submit</button>
     </form>
-    <div>{{ this.GStore.events }}</div>
+    <div>{{ this.$store.state.events }}</div>
   </div>
 </template>
 
@@ -50,7 +50,6 @@ import { v4 as uuidv4 } from 'uuid'
 import EventService from '@/services/EventService.js'
 
 export default {
-  inject: ['GStore'],
   data() {
     return {
       categories: [
@@ -79,7 +78,7 @@ export default {
       const event = {
         ...this.event,
         id: uuidv4(),
-        organizer: this.GStore.user,
+        organizer: this.$store.state.user,
       }
       console.log('Event:', event)
       EventService.postEvent(event)
