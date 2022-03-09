@@ -4,4 +4,5 @@ export default reactive({
   flashMessage: '',
   event: null,
   user: 'Hector Jose Vurchio Hurtado',
+  events: [],
 })

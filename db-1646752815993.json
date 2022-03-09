@@ -62,26 +62,6 @@
       "time": "11:00",
       "petsAllowed": false,
       "organizer": "Brody Kill"
-    },
-    {
-      "id": "f26c746f-c3ac-4e73-be8d-525e04e7f88a",
-      "category": "animal welfare",
-      "title": "Horse Brushing Race",
-      "description": "a fun event",
-      "location": "New York",
-      "date": "August 18, 2028",
-      "time": "2:00",
-      "organizer": "Hector Jose Vurchio Hurtado"
-    },
-    {
-      "id": "d477db5f-d723-41f1-a27d-3eef4f8d237a",
-      "category": "animal welfare",
-      "title": "Kangoroo Combing Combination",
-      "description": "What does this event look like?",
-      "location": "Outback",
-      "date": "September 4, 2005",
-      "time": "3:00",
-      "organizer": "Hector Jose Vurchio Hurtado"
     }
   ]
 }

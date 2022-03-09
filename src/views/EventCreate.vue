@@ -41,10 +41,14 @@
 
       <button type="submit">Submit</button>
     </form>
+    <div>{{ this.GStore.events }}</div>
   </div>
 </template>
 
 <script>
+import { v4 as uuidv4 } from 'uuid'
+import EventService from '@/services/EventService.js'
+
 export default {
   inject: ['GStore'],
   data() {
@@ -72,8 +76,20 @@ export default {
   },
   methods: {
     onSubmit() {
-      this.event.organizer = this.GStore.user
-      console.log('Event:', this.event)
+      const event = {
+        ...this.event,
+        id: uuidv4(),
+        organizer: this.GStore.user,
+      }
+      console.log('Event:', event)
+      EventService.postEvent(event)
+        .then(() => {
+          // add event here to global state
+          this.GStore.events.push(event)
+        })
+        .catch((error) => {
+          console.log(error)
+        })
     },
   },
 }
