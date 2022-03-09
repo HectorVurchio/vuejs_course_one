@@ -41,7 +41,6 @@
 
       <button type="submit">Submit</button>
     </form>
-    <div>{{ this.$store.state.events }}</div>
   </div>
 </template>
 
@@ -80,11 +79,10 @@ export default {
         id: uuidv4(),
         organizer: this.$store.state.user,
       }
-      console.log('Event:', event)
       EventService.postEvent(event)
         .then(() => {
           // add event here to global state
-          this.GStore.events.push(event)
+          this.$store.commit('ADD_EVENT', event)
         })
         .catch((error) => {
           console.log(error)

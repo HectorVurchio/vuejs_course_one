@@ -14,6 +14,9 @@ export default createStore({
     change_flash(state, chanPL) {
       state.flashMessage = chanPL
     },
+    ADD_EVENT(state, evch) {
+      state.events.push(evch)
+    },
   },
   actions: {},
   modules: {},

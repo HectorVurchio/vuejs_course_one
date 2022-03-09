@@ -82,6 +82,36 @@
       "date": "September 4, 2005",
       "time": "3:00",
       "organizer": "Hector Jose Vurchio Hurtado"
+    },
+    {
+      "id": "f2e1c8f5-1d5d-44b3-b4ad-dc8f3cc37f86",
+      "category": "housing",
+      "title": "Repair your Home",
+      "description": "Do it yourself with our tools",
+      "location": "Florida",
+      "date": "November 25, 2023",
+      "time": "10:00",
+      "organizer": "Hector Jose Vurchio Hurtado"
+    },
+    {
+      "id": "eff7750b-eebd-4fb4-8a2e-428db1fb9d45",
+      "category": "education",
+      "title": "Teach your kids yoursef",
+      "description": "Techniques to learn to teach your childresn",
+      "location": "Wyoming",
+      "date": "December 12, 2023",
+      "time": "9:00",
+      "organizer": "Hector Jose Vurchio Hurtado"
+    },
+    {
+      "id": "426bf40d-a629-47bc-9e9d-a1fc021117a5",
+      "category": "community",
+      "title": "Painting the streets",
+      "description": "Help our prisson inmates to paint the streets ",
+      "location": "New York",
+      "date": "March 23, 2023",
+      "time": "7:00",
+      "organizer": "Hector Jose Vurchio Hurtado"
     }
   ]
 }
